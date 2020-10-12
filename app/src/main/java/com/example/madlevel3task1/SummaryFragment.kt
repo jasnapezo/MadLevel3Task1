@@ -36,8 +36,8 @@ class SummaryFragment : Fragment() {
         txt_summary.text =
             String.format("You rated %s with %.1f stars! Thanks?", gameName, gameRating)
 
-        btn_start_over.setOnClickListener {
-            findNavController().navigate(R.id.action_ratingFragment_to_startFragment)
+        btn_summery.setOnClickListener {
+            findNavController().navigate(R.id.action_summaryFragment_to_startFragment)
 
         }
     }

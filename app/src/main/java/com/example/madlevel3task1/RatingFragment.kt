@@ -27,7 +27,7 @@ class RatingFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btn_start_over.setOnClickListener {
+        button_rating.setOnClickListener {
             navigateToSummary()
         }
 

@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
-import kotlinx.android.synthetic.main.rating_fragment.*
 import kotlinx.android.synthetic.main.start_fragment.*
 
 /**
@@ -16,8 +15,8 @@ import kotlinx.android.synthetic.main.start_fragment.*
 class StartFragment : Fragment() {
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.start_fragment, container, false)
@@ -25,12 +24,9 @@ class StartFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         button_start_rating.setOnClickListener {
-            findNavController().navigate(
-                R.id.action_startFragment_to_ratingFragment
-            )
-        }
-        }
+            findNavController().navigate(R.id.action_startFragment_to_ratingFragment)
 
+        }
     }
+}
